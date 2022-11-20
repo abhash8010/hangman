@@ -1,0 +1,24 @@
+.keyboard {
+  width: 100%;
+  background: none;
+  border: solid black 3px;
+  aspect-ratio: 1 / 1;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 0.2rem;
+}
+
+.keyboard:hover:not(:disabled),
+.keyboard:focus:not(:disabled) {
+  background-color: hsl(200, 100%, 75%);
+}
+
+.keyboard.active {
+  background-color: hsl(200, 100%, 50%);
+}
+
+.keyboard.inactive {
+  opacity: 0.3;
+}
